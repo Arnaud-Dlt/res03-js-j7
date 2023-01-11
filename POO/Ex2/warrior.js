@@ -1,9 +1,11 @@
+import { Character } from './character.js';
+
 class Warrior extends Character {
     #strength;
     
     constructor(name, healthPoint, strength){
         super(name,healthPoint);
-        this.#strenght = strength;
+        this.#strength = strength;
     }
     
     get strength ()
@@ -16,3 +18,5 @@ class Warrior extends Character {
         this.strength = strength;
     }
 }
+
+export { Warrior };

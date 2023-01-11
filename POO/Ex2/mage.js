@@ -1,18 +1,22 @@
+import { Character } from './character.js';
+
 class Mage extends Character {
     #manaPoint;
     
-    constructor(name, healthPoint, strength){
-        super(name,healthPoint);
-        this.#strenght = strength;
+    constructor(name, healthPoint, manaPoint){
+        super(name,manaPoint);
+        this.#manaPoint = manaPoint;
     }
     
-    get strength ()
+    get manaPoint ()
     {
-        return this.#strength;
+        return this.#manaPoint;
     }
     
-    set strength(strength)
+    set manaPoint(manaPoint)
     {
-        this.strength = strength;
+        this.manaPoint = manaPoint;
     }
 }
+
+export { Mage } ;
